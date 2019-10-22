@@ -125,6 +125,15 @@ function round(number, fraction) {
     return Math.round(number * Math.pow(10, fraction)) / Math.pow(10, fraction)
 }
 
+/**
+ * 向下整取
+ * @param {*} number
+ * @param {*} fraction
+ */
+// function floor(number, fraction) {
+//     return Math.floor(number * Math.pow(10, fraction)) / Math.pow(10, fraction)
+// }
+
 module.exports = {
-    add, sub, mul, div, round,
+    add, sub, mul, div, round
 }

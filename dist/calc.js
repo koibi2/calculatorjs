@@ -16,9 +16,9 @@ return /******/ (function(modules) { // webpackBootstrap
 /******/ 	function __webpack_require__(moduleId) {
 /******/
 /******/ 		// Check if module is in cache
-/******/ 		if(installedModules[moduleId]) {
+/******/ 		if(installedModules[moduleId])
 /******/ 			return installedModules[moduleId].exports;
-/******/ 		}
+/******/
 /******/ 		// Create a new module (and put it into the cache)
 /******/ 		var module = installedModules[moduleId] = {
 /******/ 			i: moduleId,
@@ -216,6 +216,15 @@ function div(l, r) {
 function round(number, fraction) {
     return Math.round(number * Math.pow(10, fraction)) / Math.pow(10, fraction);
 }
+
+/**
+ * 向下整取
+ * @param {*} number
+ * @param {*} fraction
+ */
+// function floor(number, fraction) {
+//     return Math.floor(number * Math.pow(10, fraction)) / Math.pow(10, fraction)
+// }
 
 module.exports = {
     add: add, sub: sub, mul: mul, div: div, round: round
